@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <style>
+        div{
+            margin: 20px auto;
+            width: 40%;
+            padding: 30px;
+            text-align: center;
+            background-image: url(https://th.bing.com/th/id/OIP.OhKSR5nvbLjqxAFysV-1-AHaHZ?w=154&h=180&c=7&r=0&o=7&pid=1.7&rm=3);
+            background-repeat: no-repeat;
+            background-size: cover ;
+            text-transform: capitalize;
+            border: 5px solid black;
+            border-radius: 20px;
+        
+            
+        }
+    </style>
 </head>
-
 <body>
+
     <form>
-        <label for="a">NAME :
-            <input type="text" placeholder="Enter the name" id="a">
-        </label>
-        <br><br>
-        <label for="pas">Password :
-            <input type="text" placeholder="Enter the name" id="pas">
-        </label>
-        <br><br>
-        <label for"b">Email-ID:
-            <input type="text" placeholder="Enter the name" id="b">
-        </label>
-        <br><br>
-        <label>Gender :
-            <input type="radio">Male
-            <input type="radio">Femail
-        </label>
-        <select>
-            <option>cse</option>
-        </select>
+        <div>
+            <label for="a">Name:</label>
+            <input type="text" id="a" placeholder="Enter your name" >
+            <br><br>
+            <label for="pas">Password:</label>
+            <input type="password" id="pas" placeholder="Enter your password">
+            <br><br>
+            <label for="b">Email ID:</label>
+            <input type="email" id="b" placeholder="Enter your email" >
+            <br><br>
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <br><br>
+            <label for="dept">Department:</label>
+            <select id="dept">
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="mech">MECH</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </body>
-
 </html>

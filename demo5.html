@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        div{
+        h1{
+            text-align: center ;
+            color:white;
+        }
+        .id{
             margin: 20px auto;
-            width: 40%;
+            width: 70%;
+            
             padding: 30px;
             text-align: center;
             background-image: url(https://th.bing.com/th/id/OIP.OhKSR5nvbLjqxAFysV-1-AHaHZ?w=154&h=180&c=7&r=0&o=7&pid=1.7&rm=3);
@@ -14,16 +20,40 @@
             background-size: cover ;
             text-transform: capitalize;
             border: 5px solid black;
-            border-radius: 20px;
+            border-radius: 20px; 
         
-            
+        }
+        .main{
+            background-color: rgb(223, 232, 233);
+            height:30px;
+            width: 1000px;
+             display: flex;
+             justify-content:space-evenly;
+             border-radius: 10px;
+             
+        }
+        .main div{
+           background-color: black;
+           color: aliceblue;
+           border-radius: 10px;
         }
     </style>
 </head>
-<body>
+<body style="background-color: black;">
 
+    <h1 ">Rigistration Form</h1>
+    <center>
+<div class="main">
+    <div style="background-color: rgb(3, 1, 1);" ><i class="fa-solid fa-house"></i>Home</div>
+    <div style="background-color: rgb(32, 16, 16);"><i class="fa-brands fa-algolia"></i></i>Search</div>
+    <div style="background-color: rgb(20, 6, 6);"><i class="fa-brands fa-airbnb"></i>login</div>
+    <div style="background-color: rgb(17, 8, 8);"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Signup</div>
+    
+
+</div>
+</center>
     <form>
-        <div>
+        <div class="id">
             <label for="a">Name:</label>
             <input type="text" id="a" placeholder="Enter your name" >
             <br><br>

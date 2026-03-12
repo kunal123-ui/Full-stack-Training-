@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Steps</title>
+
+<style>
+
+body{
+    background:rgb(240, 233, 233);
+    font-family: Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:700px;
+}
+
+.container{
+    width:400px;
+    background:#d4d4d4;
+    padding:30px;
+    border-radius:20px;
+}
+
+h2{
+    text-align:center;
+}
+
+.step{
+    display:flex;
+    align-items:center;
+    margin:20px 0;
+}
+.dot{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    margin-right:15px;
+}
+.bar{
+    width:300px;
+    height:40px;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    padding:5px;
+    color:rgb(7, 3, 3);
+}
+
+.num{
+    width:40px;
+    height:40px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:10px;
+    color:black;
+    font-weight:bold;
+}
+.c1{background:#c63a00;}
+.c2{background:#f57c00;}
+.c3{background:#7ddc1f;}
+.c4{background:#2ecc99;}
+.c5{background:#2f6fe4;}
+.c6{background:#2638d9;}
+.c7{background:#ff1a1a;}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>How does CSS work?</h2>
+<div class="step">
+<div class="dot c1"></div>
+<div class="bar c1">
+<div class="num">01</div>
+Selecting elements
+</div>
+</div>
+<div class="step">
+<div class="dot c2"></div>
+<div class="bar c2">
+<div class="num">02</div>
+Establish visual styles
+</div>
+</div>
+
+<div class="step">
+<div class="dot c3"></div>
+<div class="bar c3">
+<div class="num">03</div>
+Apply cascading rules
+</div>
+</div>
+
+<div class="step">
+<div class="dot c4"></div>
+<div class="bar c4">
+<div class="num">04</div>
+Styling hierarchy
+</div>
+</div>
+
+<div class="step">
+<div class="dot c5"></div>
+<div class="bar c5">
+<div class="num">05</div>
+External stylesheet
+</div>
+</div>
+
+<div class="step">
+<div class="dot c6"></div>
+<div class="bar c6">
+<div class="num">06</div>
+Rendering
+</div>
+</div>
+<div class="step">
+<div class="dot c7"></div>
+<div class="bar c7">
+<div class="num">07</div>
+Dynamic changes
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

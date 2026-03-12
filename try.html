@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo Collage Grid</title>
+
+<style>
+
+body{
+    background:#e6e6e6;
+    font-family:Arial;
+}
+.container{
+    width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+.album{
+    background:white;
+    padding:15px;
+    border-radius:5px;
+}
+.grid1{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap:40px;
+}
+.grid1 img{
+    width:100%;
+    height:300px;
+    border-radius:4px;
+}
+.grid2{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+.grid2 img{
+    width:100%;
+    height:100%; 
+    border-radius:4px;
+}
+.grid3{
+   
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.grid3 img{
+    width:100%;
+    height:100%;
+    border-radius:4px;
+}
+.grid4{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.grid4 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:4px;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.row{
+    grid-row: span 3;
+    width: 100px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="album">
+<div class="grid1">
+<img  src="https://picsum.photos/300/200?1">
+<img src="https://picsum.photos/300/200?3">
+<img  src="https://picsum.photos/300/200?4">
+</div>
+</div>
+<div class="album">
+<div class="grid2">
+<img src="https://picsum.photos/300/200?6">
+<img class="row" src="https://picsum.photos/300/200?7">
+<img src="https://picsum.photos/300/200?8">
+</div>
+</div>
+<div class="album">
+<div class="grid3">
+<img class="row" src="https://picsum.photos/300/200?10">
+<img src="https://picsum.photos/300/200?11">
+<img src="https://picsum.photos/300/200?12">
+<img class="row" src="https://picsum.photos/300/200?13">
+<img class="big" src="https://picsum.photos/300/200?16">
+<img  src="https://picsum.photos/300/200?17">
+<img class="row" src="https://picsum.photos/300/200?10">
+</div>
+</div>
+<div class="album">
+<div class="grid4">
+<img src="https://picsum.photos/300/200?14">
+<img src="https://picsum.photos/300/200?15">
+<img src="https://picsum.photos/300/200?16">
+<img class="big" src="https://picsum.photos/300/200?17">
+
+<img class="row" src="https://picsum.photos/300/200?13">
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

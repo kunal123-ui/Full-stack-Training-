@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 100px;
+            width: 100px;
+          height: 200px;
+            background-color: rgb(146, 92, 5);
+            transform: translatex(100px);
+            transition-duration: 10s;
+            transition-delay: 1s;
+            transform: rotate(-360deg);
+            
+            
+        }
+        .box1{
+            margin: 100px;
+            width: 100px;
+          height: 200px;
+          background-color: rgb(146, 92, 5);
+            transition-delay: 1s;
+            transition-duration: 10s; 
+        }
+        .box:hover {
+            transform: rotate(360deg);
+        }
+        .box1:hover{
+            transform: scaleX(2);
+}       
+.b{
+    position: relative;
+}
+.b img{
+    position: absolute;
+}
+.img1{
+    display: block;
+}
+.img2{
+    display: none;
+}
+        .b:hover .img1{
+           display: none;
+        }
+        .b:hover .img2{
+           display: block;
+           transition-duration: 1s;
+        }   
+    </style>
+</head>
+<body>
+    <div class="box">
+        HAII
+      
+    </div>
+   
+    <div class="box1">
+        HAII
+    </div>
+    <br>
+    <div class="b">
+        <img class="img1" src="https://picsum.photos/300/200?8">
+        <img class="img2" src="https://picsum.photos/300/200?9">
+    </div>
+</body>
+</html>

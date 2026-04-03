@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    text-align: center;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* Slider box */
+.slider{
+    width: 400px;
+    margin: 80px auto;
+    overflow: hidden;
+}
+
+/* Slides container */
+.slides{
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite;
+}
+
+/* Each slide */
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Image */
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Animation */
+@keyframes slide{
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+
+    38% { transform: translateX(-100%); }
+    66% { transform: translateX(-100%); }
+
+    71% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="slider">
+    <div class="slides">
+
+        <div class="slide">
+            <img src="https://picsum.photos/100?1">
+            <p>"Lorem ipsum dolor sit amet"</p>
+            <h4>Roger Spears</h4>
+        </div>
+
+        <div class="slide">
+            <img src="https://picsum.photos/100?2">
+            <p>"Voluptatum excepturi corporis"</p>
+            <h4>John Smith</h4>
+        </div>
+
+        <div class="slide">
+            <img src="https://picsum.photos/100?3">
+            <p>"Amet dolores excepturi"</p>
+            <h4>Will Turner</h4>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

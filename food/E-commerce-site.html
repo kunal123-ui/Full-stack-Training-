@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website - Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="cooked-chicken_8827002.png" type="image/x-icon">
+    <style>
+      body{
+    margin-top: 100px;
+}
+        nav {
+            position: fixed;
+             top: 0;
+            width: 100%;
+            max-width: 1300px;
+            margin: auto;
+            height: 80px;
+            background-color: rgb(231, 178, 97);
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+        .link {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .link:hover {
+            color: rgb(249, 249, 250);
+        }
+        .about{
+            width: 1000px;
+            height: 500px;
+            background-color: rgb(231, 178, 97);
+            border-radius: 20px;
+            margin-left: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+        }
+
+        .left{
+            max-width: 500px;
+        }
+
+        .left h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .left h1 span{
+            color: #fafafa;
+        }
+
+        .left h2{
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .left p{
+            font-weight: bold;
+            color: #eee8e8;
+            margin-bottom: 20px;
+        }
+
+        .buttons{
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .btn{
+            height: 30px;
+            border-radius: 20px;
+            border: 2px solid #04050e;
+            color: #fafafc;
+            background-color: #09090f;
+            cursor: pointer;
+            font-size:10px;
+            font-weight: bold;
+        }
+        .bt1{
+             margin-left: 90px;
+        }
+        .social{
+            display: flex;
+            gap: 15px;
+        }
+        .social i{
+            border: 2px solid #efeff3;
+            color: #02030f;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        img{
+            border-radius: 20px;
+            height: 400px;
+            width: 600px;
+        }
+        .con2{
+            padding: 30px;
+            margin: 40px;
+            width: 1200px;
+            background-color: rgb(231, 178, 97);
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px 5px;
+            border-radius: 20px;
+        } 
+        .img1{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            width: 250px;
+            height: 200px;
+        }
+        .role{
+            font-weight: bold;
+        }
+        .text{
+            background: white;
+            text-align: left;
+            padding: 10px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .img-box{
+            transition: 0.8s;
+        }
+        .img-box:hover{
+            transform: scale(1.1);
+        }
+        .head{
+            text-align: center;
+        }
+        .ord{
+            border: 2px solid rgb(231, 178, 97);
+            background-color: rgb(231, 178, 97);
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .login{
+            padding: 30px;
+           margin-left: 400px;
+            background-color: rgb(231, 178, 97);
+            height: 250px;
+            width: 500px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+       .login{
+    padding: 30px;
+    margin: 50px auto;
+    background-color: rgb(231, 178, 97);
+    height: auto;
+    width: 400px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login input{
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.login label{
+    display: block;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.log1{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 35px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.log1:hover{
+    background-color: white;
+    color: black;
+}
+
+.account{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.account a{
+    text-decoration: none;
+    color: black;
+}
+
+.account a:hover{
+    color: white;
+}
+        
+.login{
+    padding: 30px;
+    margin: 50px auto;
+    background-color: rgb(231, 178, 97);
+    width: 400px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.login label{
+    text-align: left;
+    margin-left: 40px;
+}
+.account{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.log1{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 35px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.log1:hover{
+    background-color: white;
+    color: black;
+}
+
+.account a{
+    color: black;
+}
+.account a:hover{
+    color: white;
+}
+.mov{
+    color: white;
+}
+.footer{
+    background-color: rgb(231, 178, 97);
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.footer-con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box{
+    width: 250px;
+    margin: 10px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom: 10px;
+}
+.footer-box a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 5px 0;
+}
+.footer-box a:hover{
+    color: white;
+}
+.footer-box i{
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 50%;
+}
+.footer-bot{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">🍔 Food Ordering App</div>
+        <div class="menu">
+            <a class="link" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="link" href="#menu"><i class="fa-solid fa-utensils"></i> Menus</a>
+            <a class="link" href="#order"><i class="fa-solid fa-cart-arrow-down"></i> Order</a>
+            <a class="link" href="#about"><i class="fa-solid fa-store"></i> About</a>
+            <a class="link" href="#contact"><i class="fa-solid fa-phone"></i> Contacts</a>
+            <a class="link" href="#login"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+        </div>
+    </nav>
+    <br>    
+    <div id="home" class="about">
+        <div class="left">
+            <h1>Hi, I'm <span>Kunal M</span></h1>
+            <h2>Professional Chef</h2>
+            <p>
+                focuses on high-quality visual content, such as food photography and recipe videos.
+            </p>
+            <div class="buttons">
+                <button class="btn">ORDER NOW</button>
+                <button class="btn">SEE MENUS</button>
+            </div>
+            <div class="social">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZq0PtukWFwSgSQ1W7OR2fJKbReeWII5kItg&s">
+        </div>
+    </div>
+<br>
+ <div class="head">
+        <h1>Order Your Favourite Food</h1>
+        </div>
+    <div id="menu" class="con2">
+    
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDnMn8rN7F7K8zJ8CN2DZIyPjI3xeeVwNfQ&s">
+            </div>
+            <h3>Will Turner</h3>
+            <p><span class="role">$500</span><br>Lorem ipsum dolor sit amet...</p>
+        <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXbdIZXEzq_oSQnNVmmN4sNPAPyJFIcTxUnA&s">
+            </div>
+            <h3>Cloe Marena</h3>
+            <p><span class="role">$300</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKEI-6mVzRv3kIKHaiG0efFwtr_BpDD27FoQ&s">
+            </div>
+            <h3>John Rooster</h3>
+            <p><span class="role">$400</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FtLkRWNB8PmyvwOqk3FIfwv9VUE77E5sHw&s">
+            </div>
+            <h3>Will Turner</h3>
+            <p><span class="role">$600</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9x0fkzqDKdQrFJKxRnMVj2IzLeP__v6USw&s">
+            </div>
+            <h3>Will Turner</h3>
+            <p><span class="role">$800</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdh_GhGRgPfUCLuV7otyq6SRho4cAVR2YXgw&s">
+            </div>
+            <h3>Cloe Marena</h3>
+            <p><span class="role">$1000</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhoHpsnzjX_Wx8s5mJfPl0Hg_XW9NbhN-y5A&s">
+            </div>
+            <h3>John Rooster</h3>
+            <p><span class="role">$900</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7QE-yZ1A3mzri9yFwxoxR5KgjTqx27ezS7w&s">
+            </div>
+            <h3>Will Turner</h3>
+            <p><span class="role">$500</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KHEh_ZS7XrG-dbhvaOKmEM4cFGXsIPAtbA&s">
+            </div>
+            <h3>Will Turner</h3>
+            <p><span class="role">$700</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9EMkFbJ2hyda-Kw1gnw5B0m4pKnUqH7Q-Q&s">
+            </div>
+            <h3>Cloe Marena</h3>
+            <p><span class="role">$670</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRM6e83iU80W7EnheHkutzGNAJmTnSF-i2Q&s">
+            </div>
+            <h3>John Rooster</h3>
+            <p><span class="role">$850</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>
+        <div class="text">
+            <div class="img-box">
+                <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZQITQZZAxb6RB7Qbrs0akYUNv09Nza1TfA&s">
+            </div>
+            <h3>Will Turner</h3>
+            <p><span class="role">$600</span><br>Lorem ipsum dolor sit amet...</p>
+            <div class="buttons">
+            <button class="ord">Order</button>
+            <button class="ord bt1">Add cards</button>
+             </div>
+        </div>   
+    </div>
+<div id="login" class="login">
+    <h1>Login To Order</h1>
+    <label for="login-email">Email ID:</label>
+    <input type="email" id="login-email" placeholder="Enter your email" >
+    <br><br>
+    <label for="login-pass">Password:</label>
+    <input type="password" id="login-pass" placeholder="Enter your password">
+    <br><br>
+    <div class="account">
+        <button class="log1">Login</button>
+        <p class="mov">
+            Don't hava account ? 
+            <a class="link" href="#creat">Create Account</a>
+        </p>
+    </div>
+</div>
+<div id="creat" class="login">
+    <h1>Create Account</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" >
+    <br><br>
+    <label for="register-email">Email ID:</label>
+    <input type="email" id="register-email" placeholder="Enter your email" >
+    <br><br>
+    <label for="register-pass">Password:</label>
+    <input type="password" id="register-pass" placeholder="Enter your password">
+    <br><br>
+    <label for="confirm-pass">Conform Password:</label>
+    <input type="password" id="confirm-pass" placeholder="Conform password">
+    <br><br>
+    <div class="account">
+        <button class="log1">Create Account</button>
+        <p class="mov">
+            already hava account ! 
+            <a class="link" href="#login">Login</a>
+        </p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-con">
+        <div class="footer-box">
+            <h2>🍔 Food Ordering App</h2>
+            <p>Delicious food delivered to your doorstep. Fast, fresh and affordable meals for everyone.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a><br>
+            <a href="#menu">Menu</a><br>
+            <a href="#login">Login</a>
+        </div>
+        <div id="contact" class="footer-box">
+            <h3>Contact Us</h3>
+            <p>Email: foodapp@gmail.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Tamil Nadu, India</p>
+        </div>
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+    <div class="footer-bot">
+        <p>© 2026 Food Ordering App | Designed by Kunal M</p>
+    </div>
+</footer>
+</body>
+</html>
